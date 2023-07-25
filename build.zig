@@ -15,7 +15,7 @@ pub fn build(b: *std.Build) void {
     // set a preferred release mode, allowing the user to decide how to optimize.
     const optimize = b.standardOptimizeOption(.{});
 
-    _ = b.addModule("testmod", .{
+    _ = b.addModule("leftpad", .{
         .root_source_file = .{ .path = "src/main.zig" },
     });
 
