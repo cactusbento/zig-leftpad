@@ -12,10 +12,6 @@ pub fn leftpad(alloc: std.mem.Allocator, str: []const u8, len: usize, ch: u8) ![
     return padded;
 }
 
-pub export fn add(a: i32, b: i32) i32 {
-    return a + b;
-}
-
 test leftpad {
     const input = "instr";
     const output = try leftpad(std.testing.allocator, input, 4, ' ');
